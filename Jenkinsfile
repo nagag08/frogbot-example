@@ -23,7 +23,7 @@ pipeline {
 
         // [Mandatory]
         // GitHub enterprise server organization namespace
-        JF_GIT_OWNER = ""
+        JF_GIT_OWNER = "nagag08"
 
         // [Mandatory]
         // API endpoint to GitHub enterprise server
