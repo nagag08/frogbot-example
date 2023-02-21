@@ -35,6 +35,9 @@ pipeline {
         // JF_USER = credentials("JF_USER")
         // JF_PASSWORD = credentials("JF_PASSWORD")
         }
+        tools {
+           maven 'MAVEN_TOOL'
+       }
         stages {
             stage('Download Frogbot') {
                 steps {
