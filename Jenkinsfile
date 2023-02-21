@@ -54,12 +54,18 @@ pipeline {
                     // powershell """.\frogbot.exe scan-pull-requests"""
                 }
             }
-            stage('Scan and Fix Repos') {
-                 steps {
-                     sh "./frogbot scan-and-fix-repos"
-                     // For Windows runner:
-                     // powershell """.\frogbot.exe scan-and-fix-repos"""
-                 }    
-            }    
+            stage('Scan opened Pull Requests') {
+                steps {
+                   sh "./frogbot scan-pull-requests"
+               }
+            }
+
+//             stage('Scan and Fix Repos') {
+//                  steps {
+//                      sh "./frogbot scan-and-fix-repos"
+//                      // For Windows runner:
+//                      // powershell """.\frogbot.exe scan-and-fix-repos"""
+//                  }    
+//             }    
         }
     }
