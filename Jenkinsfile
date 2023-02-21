@@ -24,6 +24,7 @@ pipeline {
         // [Mandatory]
         // GitHub enterprise server organization namespace
         JF_GIT_OWNER = "nagag08"
+        JF_GIT_REPO = "frogbot"
 
         // [Mandatory]
         // API endpoint to GitHub enterprise server
